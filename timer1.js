@@ -1,9 +1,8 @@
 const argu = process.argv.slice(2);
 //collect passed in command line arguments
-const numArr = argu.map(Number);
-//convert the strings in array to numbers
-
 const alarmTimer = () => {
+  const numArr = argu.map(Number);
+  //convert the strings in array to numbers
   let time = 0;
   //set the time to 0 to += for setTimeout later
   if (numArr.length === 0) {
